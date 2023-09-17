@@ -1,0 +1,124 @@
+## Atividades
+
+1. Atividade 1: Classe Pessoa
+A) Crie uma classe chamada Pessoa.
+b) Adicione os seguintes atributos privados:
+C) String nome
+D) int idade
+E) String endereco
+F) Crie um construtor para inicializar todos os atributos da classe.
+G) Crie métodos getters e setters para todos os atributos.
+Adicione um método apresentar() que retorna uma string contendo uma breve apresentação da pessoa.
+
+2. Atividade 2: Classe Carro
+A) Crie uma classe chamada Carro.
+B) Adicione os seguintes atributos privados:
+C) String marca
+D) String modelo
+E) int anoFabricacao
+F) double preco
+G) Crie um construtor para inicializar todos os atributos da classe.
+H) Crie métodos getters e setters para todos os atributos.
+I) Adicione um método informacoes() que retorna uma string contendo informações detalhadas sobre o carro.
+
+3. Atividade 3: Classe Banco
+A) Crie uma classe chamada Banco.
+B) Adicione os seguintes atributos privados:
+C) String nome
+D) String endereco
+E) List<ContaBancaria> contas (onde ContaBancaria é outra classe que você criará)
+F) Cr ie um construtor para inicializar o nome e o endereço do banco. Inicialize a lista de contas como uma lista vazia.
+G) Crie métodos getters e setters para os atributos nome e endereço.
+H) Adicione um método adicionarConta(ContaBancaria conta) que adiciona uma conta à lista de contas do banco.
+I( Adicione um método listarContas() que imprime os números das contas disponíveis no banco.
+
+4. Atividade 4: Classe ContaBancaria
+A) Crie uma classe chamada ContaBancaria.
+B) Adicione os seguintes atributos privados:
+C) int numero
+D) String titular
+E) double saldo
+F) Crie um construtor para inicializar todos os atributos da classe.
+G) Crie métodos getters e setters para todos os atributos.
+H) Adicione métodos depositar(double valor) e sacar(double valor) que atualizem o saldo da conta.
+I) Adicione um método consultarSaldo() que retorna o saldo atual da conta.
+
+5. Atividade 5: Classe Loja
+A) Crie uma classe chamada Loja.
+B) Adicione os seguintes atributos privados:
+C) String nome
+D) String endereco
+E) List<Produto> produtos (onde Produto é outra classe que você criará)
+F) Crie um construtor para inicializar o nome e o endereço da loja. Inicialize a lista de produtos como uma lista vazia.
+G) Crie métodos getters e setters para os atributos nome e endereço.
+H) Adicione um método adicionarProduto(Produto produto) que adiciona um produto à lista de produtos da loja.
+I) Adicione um método listarProdutos() que imprime os nomes e preços de todos os produtos disponíveis na loja.
+
+Claro, vamos aumentar um pouco a complexidade das atividades:
+
+### Atividade 6: Classe Pedido
+
+1. Crie uma classe chamada `Pedido`.
+2. Adicione os seguintes atributos privados:
+    - `int numeroPedido`
+    - `Cliente cliente` (onde `Cliente` é outra classe que você criará)
+    - `List<ItemPedido> itens` (onde `ItemPedido` é outra classe que você criará)
+    - `double valorTotal`
+3. Crie um construtor para inicializar o número do pedido e o cliente associado. Inicialize a lista de itens como uma lista vazia e o valor total como 0.
+4. Crie métodos `getters` e `setters` para o número do pedido e o cliente.
+5. Adicione um método `adicionarItem(ItemPedido item)` que permite adicionar um item ao pedido e atualizar o valor total.
+6. Adicione um método `calcularValorTotal()` que calcula o valor total do pedido com base nos itens.
+7. Adicione um método `imprimirPedido()` que imprime todas as informações do pedido, incluindo os itens e o valor total.
+
+### Atividade 7: Classe Cliente
+
+1. Crie uma classe chamada `Cliente`.
+2. Adicione os seguintes atributos privados:
+    - `String nome`
+    - `String endereco`
+    - `String email`
+3. Crie um construtor para inicializar todos os atributos da classe.
+4. Crie métodos `getters` e `setters` para todos os atributos.
+5. Adicione um método `exibirInformacoes()` que retorna uma string com as informações do cliente.
+
+### Atividade 8: Classe Produto e ItemPedido
+
+1. Crie uma classe chamada `Produto`.
+2. Adicione os seguintes atributos privados:
+    - `int codigo`
+    - `String nome`
+    - `double preco`
+3. Crie um construtor para inicializar todos os atributos da classe.
+4. Crie métodos `getters` e `setters` para todos os atributos.
+5. Crie uma classe chamada `ItemPedido`.
+6. Adicione os seguintes atributos privados:
+    - `Produto produto`
+    - `int quantidade`
+7. Crie um construtor para inicializar o produto e a quantidade do item.
+8. Crie métodos `getters` e `setters` para o produto e a quantidade do item.
+
+### Atividade 9: Classe Escola e Aluno
+
+1. Crie uma classe chamada `Escola`.
+2. Adicione os seguintes atributos privados:
+    - `String nome`
+    - `String endereco`
+    - `List<Aluno> alunos` (onde `Aluno` é outra classe que você criará)
+3. Crie um construtor para inicializar o nome e o endereço da escola. Inicialize a lista de alunos como uma lista vazia.
+4. Crie métodos `getters` e `setters` para os atributos nome e endereço.
+5. Adicione um método `adicionarAluno(Aluno aluno)` que permite adicionar um aluno à escola.
+6. Adicione um método `listarAlunos()` que imprime os nomes e matrículas de todos os alunos da escola.
+
+### Atividade 10: Classe Aluno e Notas
+
+1. Crie uma classe chamada `Aluno`.
+2. Adicione os seguintes atributos privados:
+    - `int matricula`
+    - `String nome`
+    - `List<Nota> notas` (onde `Nota` é outra classe que você criará)
+3. Crie um construtor para inicializar a matrícula e o nome do aluno. Inicialize a lista de notas como uma lista vazia.
+4. Crie métodos `getters` e `setters` para a matrícula e o nome do aluno.
+5. Adicione um método `adicionarNota(Nota nota)` que permite adicionar uma nota ao aluno.
+6. Adicione um método `calcularMedia()` que calcula a média das notas do aluno.
+7. Crie uma classe chamada `Nota` com um atributo privado `double valor` e um construtor para inicializar esse valor.
+8. Adicione um método `getValor()` na classe `Nota` para acessar o valor da nota.
